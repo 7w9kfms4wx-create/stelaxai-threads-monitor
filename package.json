@@ -1,0 +1,29 @@
+{
+  "name": "stelaxai-outreach",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape": "node --experimental-vm-modules dist/scrape.js",
+    "emails": "node --experimental-vm-modules dist/find-emails.js",
+    "send": "node --experimental-vm-modules dist/send.js",
+    "run-all": "node --experimental-vm-modules dist/run-all.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/nodemailer": "^8.0.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "imapflow": "^1.3.5",
+    "nodemailer": "^8.0.10",
+    "openai": "^4.47.1",
+    "playwright": "^1.44.0",
+    "resend": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "pm2": "^7.0.1",
+    "tsx": "^4.15.0",
+    "typescript": "^5.4.5"
+  }
+}
